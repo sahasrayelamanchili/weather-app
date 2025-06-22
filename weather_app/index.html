@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Creative Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Weather Snapshot</h1>
+
+    <div class="input-box">
+      <input type="text" id="locationInput" placeholder="Enter a city..." />
+      <button onclick="getWeather()">Search</button>
+    </div>
+
+    <div id="recent-searches" class="recent-searches"></div>
+
+    <button class="location-btn" onclick="useMyLocation()">📍 Use My Location</button>
+
+    <div id="result" class="weather-card hidden"></div>
+
+    <div id="forecast" class="forecast-container hidden"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
